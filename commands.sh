@@ -29,4 +29,7 @@ python3 scripts/tral_refine.py \
     -p 0.05 \
     -d 0.05
 
+python3 scripts/pickle_to_df.py \
+    -r results/refined \
+    -o results/primate_SLC6A3_VNTRs.tsv
 
