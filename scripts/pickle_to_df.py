@@ -20,8 +20,8 @@ def parse_cla():
 
     return parser.parse_args()
 
-def get_consensus_unit(msa: str) -> str:    
-    """ Given a comma-delimited string of units representing a multiple sequence
+def get_consensus_unit(msa: list) -> str:    
+    """ Given a list of units representing a multiple sequence
     alignment (from DB), determine the consensus unit at each column of the alignment and 
     return the consensus unit. Insertion columns where the number of 
     insertions >= number of nucleotides are skipped. For each column, most common nt
